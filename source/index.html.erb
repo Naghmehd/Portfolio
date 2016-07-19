@@ -1,13 +1,115 @@
 ---
 title: Naghmeh Shirazi
 ---
+<div class="spotlight"></div>
 
-<div class="welcome">
-  <div class="logo">
-    <%= image_tag "middleman-logo.svg" %>
-  </div>
-  <h1>Naghmeh Shirazi</h1>
-  <p class="doc">
-    <%= link_to "Read Documentation Online", "https://middlemanapp.com", target: "_blank" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<main id="home" class="home">
+<header>
+  <div><h1 id="homehead">About Me</h1></div>
+</header>
+  <div class="profile-pic"><img src="https://avatars.githubusercontent.com/u/naghmehd"></div>
+  <article class="in-home">
+    <p>Hi and Welcome to my page!</p>
+    <p>I have a business and economics background. I run a family bakery in Mumbai and a home bakery in Austin.</p>
+    <p>My interest for coding started when she I to learn to manage my bakery website. With time, my interest grew and it led to a QA internship. By end of my internship, I was determined to invest more time into my new passion.</p>
+    <p>This led me to The Iron Yard. At TIY I transitioned from being a hobbyist to a coder.When I am not coding, reading about coding I bake, volunteer at my kids’ school, mentor girls to pursue education and career and travels with my family.</p>
+    <p>My skills set are in Ruby, Ruby on Rails, HTML, CSS, JavaScript, React</p>
+    <p>Let me know if I can be of any assitance!</P
+  </article>
+</main>
+
+<main id="projects" class="projects">
+<header>
+  <div><h1 id="projectshead">My Work!</h1></div>
+</header>
+  <article class="row">
+  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 image">
+
+  	<div class="hovereffect">
+  		<%= image_tag 'toyexchange.png', class:'img-responsive' %>
+  		<div class="overlay">
+  		<h2> <%= link_to 'GitHub', 'https://github.com/naghmehd/toyexchange' %> </h2>
+  			<%= link_to 'Live Site', 'http://toyexchange.herokuapp.com', class:'info' %>
+		</div>
+	</div>
+
+  	</div>
+  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  		<article class="project-article">
+
+  		</article>
+  	</div>
+  </article>
+
+  <article class="row">
+  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 image">
+  	<div class="hovereffect">
+  	<%= image_tag 'spacebook.png', class:'img-responsive' %>
+  		<div class="overlay">
+  			<h2> <%= link_to 'GitHub', 'https://github.com/tiy-austin-ror/SpaceBook' %></h2>
+  			</div>
+	</div>
+  	</div>
+  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  		<article class="project-article">
+  		</article>
+  	</div>
+  </article>
+
+
+  <article class="row">
+  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 image">
+  	<div class="hovereffect">
+
+  	<%= image_tag 'movie.png', class:'img-responsive' %>
+  		<div class="overlay">
+  		<h2> <%= link_to 'GitHub', 'https://github.com/Naghmehd/group_project_movie' %> </h2>
+  		</div>
+  		</div>
+
+  	</div>
+  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+  		<article class="project-article">
+
+  	</div>
+  </article>
+
+</main>
+
+<main id="contact" class="contact">
+	<header>
+	  <div><h1 id="contacthead">Contact</h1></div>
+	</header>
+	<ul class="row">
+
+    <li class="col-xs-12 col-sm-offset-4 col-sm-8 image">
+    <i class="fa fa-3x fa-envelope" aria-hidden="true"></i> <span class="contact-text"><%= mail_to 'naghmehd@gmail.com', 'naghmehd@gmail.com'%></span>
+  </li>
+
+	<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image">
+		<i class="fa fa-3x fa-github" aria-hidden="true"></i>
+  		<% link_to 'https://github.com/naghmehd' do %>
+		<span class="contact-text first">naghmehd</span>
+		<% end %>
+	</li>
+
+	<li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image">
+		<i class="fa fa-3x fa-twitter" aria-hidden="true"></i>
+  		<% link_to 'https://twitter.com/naghmehshirazi' do %>
+		<span class="contact-text">@Naghmehshirazi</span>
+		<% end %>
+	</li>
+
+  <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image">
+    <i class="fa fa-3x fa-linkedin" aria-hidden="true"></i>
+      <% link_to 'https://www.linkedin.com/in/naghmehshirazi' do %>
+    <span class="contact-text">Naghmehshirazi</span>
+    <% end %>
+  </li>
+
+  <li class="col-xs-12 col-sm-4 col-md-4 col-lg-4 image">
+    <i class="fa fa-3x fa-cloud-download" aria-hidden="true"></i>
+    <span class="contact-text"><a href="/doc/NaghmehShirazi_Resume.pdf">RÉSUMÉ</a></span>
+  </li>
+</ul>
+</main>
