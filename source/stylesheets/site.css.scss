@@ -112,6 +112,21 @@ header {
   }
 }
 
+.in-home {
+  padding: 2em;
+}
+
+article {
+  animation: fadeIn 4s;
+  font-size: 1.15em;
+  line-height: 1.4em;
+  color: lighten(black, 25%);
+  transition: all 0.3s ease;
+
+}
+
+
+
 .profile-pic {
   img {
     animation: fadeIn 4s;
