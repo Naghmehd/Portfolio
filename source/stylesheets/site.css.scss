@@ -1,41 +1,28 @@
 @charset "utf-8";
 @import "normalize";
 
+$orange: #DF761E;
+$floralwhite: #fdf9ef;
+$primary: #302D2E;
+
 body {
-  background: #fdf9ef;
+  background: $floralwhite;
   text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   margin-top: 11em;
 }
 
-h1 {
-  color: rgba(0,0,0,0.5);
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.8em;
-  font-weight: 400;
-  margin: 0;
+h1, h2, h3, h4, h5 , h6 {
+	font-family: 'Lato', sans-serif;
+  color: #302D2E;
 }
 
-.doc {
-  margin: 3em 0;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.1em;
-  font-weight: 300;
-
-  a {
-    border: 1px solid white;
-    border-radius: 3px;
-    padding: 0.75em 0.7em;
-    color: white;
-    text-decoration: none;
-    transition: color 0.1s linear;
-    &:hover {
-      background: rgba(0,0,0,0.2);
-      color: white;
-      transition: all 0.15s linear;
-    }
-  }
+body {
+  font-family: 'Lato', sans-serif;
+	p, article{
+		color: $primary;
+	}
 }
 
 .logo {
@@ -53,7 +40,7 @@ h1 {
         text-decoration: none;
       }
     }
-  background-color: #DF761E;
+  background-color: $orange;
   z-index: 5;
   position: fixed;
   top: 0;
@@ -110,6 +97,21 @@ h1 {
   }
 }
 
+header {
+  width: 11.445em;
+  margin: 0 auto 0 10%;
+  padding-top: 0.1em;
+
+
+  h1 {
+    display: inline-block;
+    animation: slideIn 2s;
+    font-weight: lighter;
+    font-size: 2.5em;
+
+  }
+}
+
 .profile-pic {
   img {
     animation: fadeIn 4s;
@@ -132,6 +134,10 @@ h1 {
 .in-home {
   text-align: justify;
   margin: 0 2em 0 2em;
+}
+
+.projects {
+
 }
 
 .contact {
