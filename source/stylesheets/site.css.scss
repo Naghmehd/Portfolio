@@ -127,7 +127,7 @@ article {
 .project-article {
   padding: 0 2em;
   font-size: 1em;
-  margin-top: -7em;
+  margin-top: 1em;
 }
 
 .profile-pic {
@@ -139,13 +139,12 @@ article {
     height: 4em;
     width: 4em;
     box-shadow: 0px 0px 3px 1px #777;
-    transition: all 0.5s ease;
   }
 }
 
 .project {
 
-  min-height: 100vh;
+  min-height: 85vh;
 
   .go-to {
     position: relative;
@@ -175,6 +174,11 @@ article {
   padding-bottom: 2em;
   font-size: 0.95em;
 }
+}
+
+.img-responsive {
+  display: inline-block;
+    max-width: 85%;
 }
 
 .contact {
