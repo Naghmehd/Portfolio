@@ -69,7 +69,7 @@ body {
     display: inline-block;
     position: relative;
     top: 1.5em;
-    right: 1.5em;
+    left: 5.5em;
     width: 17.14em;
     padding: 0;
     .home {
@@ -233,22 +233,7 @@ article {
   }
 }
 
-@media(max-width: 322px){
-  .logo {
-    top: 1.25em;
-    font-size: 1.25em;
-    left: -1em;
-  }
-}
-
-@media(max-width: 380px){
-  .logo {
-    top: 2.15em;
-    font-size: 2.5em;
-  }
-}
-
-@media (min-width: 600px) {
+@media (max-width: 479px-767px) {
 
   header {
   margin: 0 auto;
@@ -256,7 +241,7 @@ article {
   }
   .nav {
     ul {
-      left: 6em;
+      left: -10em;
     }
   }
   .in-home {
@@ -265,11 +250,8 @@ article {
   }
 
   .logo {
-    &:hover {
-      -webkit-transform: scale(1.1) rotateZ(360deg);
-    }
+    left: 5em;
   }
-
   .profile-pic {
     img {
       animation: fadeIn 3s;
@@ -290,13 +272,12 @@ article {
   }
 }
 
-@media (min-width: 992px) {
+@media (max-width: 768px-978px) {
   .overlay{
 
   }
   .logo {
-    margin-top: 0.7em;
-    left: -17em;;
+    left: -12em;;
   }
 
   .project-article {
@@ -305,7 +286,7 @@ article {
 
   .nav {
     ul {
-      left: 17em;
+      right: 20.5em;
     }
   }
   .in-home {
@@ -333,16 +314,16 @@ article {
   }
 }
 
-@media (min-width: 1200px) {
+@media (max-width: 979px-larger) {
   body {
     margin: 0 10%;
   }
   .logo {
-    left: -32em;
+    left: -20em;
   }
   .nav {
     ul {
-      left: 42em;
+      left: 31.5em;
     }
   }
 
