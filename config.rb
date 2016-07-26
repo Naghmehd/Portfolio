@@ -22,7 +22,6 @@ page '/*.txt', layout: false
 configure :development do
   activate :livereload
 end
-
 ###
 # Helpers
 ###
@@ -41,8 +40,4 @@ configure :build do
 
   # Minify Javascript on build
   # activate :minify_javascript
-end
-
-activate :bootstrap_navbar do |bootstrap_navbar|
-  bootstrap_navbar.bootstrap_version = '3.0.3'
 end
