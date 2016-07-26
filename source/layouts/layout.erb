@@ -25,16 +25,19 @@
 
   <body class="<%= page_classes %>">
     <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
-      <div class="container">
-        <% link_to "#home" do%>
-        <span class="logo">Naghmeh Shirazi</span>
-        <% end %>
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand">
+            <% link_to "#home" do%>
+            <span class="logo">Naghmeh Shirazi</span>
+            <% end %>
+          </a>
+        </div>
           <ul>
             <li id="home" class="home"><%=link_to "Home", "#home"%></li>
             <li id="projects" class="projects"><%=link_to "Projects", "#projects" %></li>
             <li id="contact" class="contact"><%=link_to "Contact", "#contact" %></li>
              <div id="underline" class="underline"></div>
-
           </ul>
       </div>
     </nav>

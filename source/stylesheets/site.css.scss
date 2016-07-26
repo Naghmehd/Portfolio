@@ -29,17 +29,13 @@ body {
 }
 
 .logo {
-  display: inline-block;
   position: relative;
   color: #fff;
   font-size: 1.5em;
-  position: relative;
   top: 1em;
-  left: -4em;
-  padding: 3px 20px 0px 20px;
 }
 
-.nav {
+.navbar {
     a {
       text-decoration: none;
       &:hover {
@@ -47,60 +43,48 @@ body {
       }
     }
   background-color: $orange;
-  z-index: 5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 6em;
-  margin-top: -1em;
   .underline {
     animation: fadeIn 3s;
-    position: relative;
     top: 0.8em;
-    display: block;
     height: 3px;
     width: 3em;
     background-color: #ECC561;
-    left: 0.7em;
     transition: all 0.15s ease-out;
   }
   ul {
-    display: inline-block;
-    position: relative;
-    top: 1.5em;
-    left: 5.5em;
-    width: 17.14em;
-    padding: 0;
-    .home {
-      animation-duration: 1s;
-    }
-    .projects {
-      animation-duration: 0.5s;
-    }
-    .contact {
-      animation-duration: 0.2s;
+   display: inline-block;
+   position: relative;
+   top: 1em;
 
-    }
-    li {
-      animation: slideIn;
-      display: inline-block;
-      margin: 0 0.9em;
-      a {
-        display: inline-block;
+   .home {
+     animation-duration: 1s;
+   }
+   .projects {
+     animation-duration: 0.5s;
+   }
+   .contact {
+     animation-duration: 0.2s;
 
-        text-decoration: none;
-        font-family: 'Lato', sans-serif;
-        color: #fff;
-        font-size: 0.9em;
-        letter-spacing: 0.09em;
-        &:hover {
-          color: #ECC561;
-          -webkit-transform: scale(1.1);
-        }
-      }
-    }
-  }
+   }
+   li {
+     animation: slideIn;
+     display: inline-block;
+     margin: 0 0.9em;
+     a {
+       display: inline-block;
+
+       text-decoration: none;
+       font-family: 'Lato', sans-serif;
+       color: #fff;
+       font-size: 0.9em;
+       letter-spacing: 0.09em;
+       &:hover {
+         color: #ECC561;
+         -webkit-transform: scale(1.1);
+       }
+     }
+   }
+ }
 }
 
 header {
