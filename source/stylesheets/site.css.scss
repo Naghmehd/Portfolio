@@ -3,12 +3,15 @@
 
 $orange: #DF761E;
 $lightorange: #ECC561;
+$darkblue: #35485F;
 
 body {
   text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
   margin-top: 11em;
+  background-color: $darkblue;
+  color: white;
 }
 
 h1, h2, h3, h4, h5 , h6 {
@@ -21,12 +24,8 @@ p {
   line-height: 200%;
 }
 
-body {
-  font-family: 'Lato', sans-serif;
-  background-color: #35485F;
-	p, article{
-		color: white;
-	}
+.container {
+  margin-top: 16em;
 }
 
 header {
@@ -42,21 +41,72 @@ header {
 
 .profile-pic {
   img {
-    animation: fadeIn 4s;
     position: absolute;
-    top: 2em;
+    top: 7em;
     left: 45%;
     border-radius: 50%;
     height: 15em;
     width: 15em;
     box-shadow: 0px 0px 3px 1px #fff;
-    transition: all 0.5s ease;
   }
 }
 
 .row {
     margin-right: 0px;
     margin-left: 20px;
+}
+
+
+.navbar {
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  background-color: $darkblue;
+  .underline {
+    animation: fadeIn 3s;
+    top: 0.8em;
+    height: 3px;
+    width: 3em;
+    background-color: #ECC561;
+    transition: all 0.15s ease-out;
+  }
+  ul {
+   display: inline-block;
+   position: relative;
+   top: 1em;
+
+   .main1 {
+     animation-duration: 1s;
+   }
+   .main2 {
+     animation-duration: 0.5s;
+   }
+   .main3 {
+     animation-duration: 0.2s;
+
+   }
+   li {
+     animation: slideIn;
+     display: inline-block;
+     margin: 0 0.9em;
+     a {
+       display: inline-block;
+
+       text-decoration: none;
+       font-family: 'Lato', sans-serif;
+       color: #fff;
+       font-size: 0.9em;
+       letter-spacing: 0.09em;
+       &:hover {
+         color: #ECC561;
+         -webkit-transform: scale(1.1);
+       }
+     }
+   }
+ }
 }
 
 .thumbnail {
