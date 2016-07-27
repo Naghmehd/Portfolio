@@ -2,8 +2,6 @@
 title: Naghmeh Shirazi
 ---
 
-<!-- <div class="profile-pic"><img src="https://avatars.githubusercontent.com/naghmehd"></div> -->
-
 <div class="container">
   <div class="profile-pic"><img src="https://avatars.githubusercontent.com/naghmehd"></div>
 
@@ -24,95 +22,89 @@ title: Naghmeh Shirazi
       </div>
   </div>
 
-  <div id="main3" class="main3">
-  	<ul class="row">
-      <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 image">
-        <i class="fa fa-3x fa-envelope" aria-hidden="true"></i>
-        <span class="contact-text"><%= mail_to 'naghmehd@gmail.com', 'naghmehd@gmail.com'%></span>
-      </li>
-
-    	<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 image">
-    		<i class="fa fa-3x fa-github" aria-hidden="true"></i>
-      		<% link_to 'https://github.com/naghmehd' do %>
-    		<span class="contact-text first">naghmehd</span>
-    		<% end %>
-    	</li>
-
-    	<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 image">
-    		<i class="fa fa-3x fa-twitter" aria-hidden="true"></i>
-      		<% link_to 'https://twitter.com/naghmehshirazi' do %>
-    		<span class="contact-text">naghmehshirazi</span>
-    		<% end %>
-    	</li>
-
-      <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 image">
-        <i class="fa fa-3x fa-cloud-download" aria-hidden="true"></i>
-        <span class="contact-text"><a href="/doc/NaghmehShirazi_Resume.pdf">RÉSUMÉ</a></span>
-      </li>
-    </ul>
-  </div>
-</div>
-
-
-
-
-
-<main id="main2" class="main2">
-<header>
-  <div><h1 id="main2head">My Work!</h1></div>
-</header>
-  <article class="row">
-  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 image">
-		<%= image_tag 'toyexchange.png', class:'img-responsive' %>
-  		<div class="overlay">
-  		  <h4> <%= link_to 'GitHub', 'https://github.com/naghmehd/toyexchange' %> </h4>
-  			<%= link_to 'Live Site', 'http://toyexchange.herokuapp.com', class:'info' %>
-  	  </div>
-	 </div>
-
-  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-  		<article class="project-article">
-        ToyExchange is an app for parents to exchange toys. This was
-  		  my final project at The Iron Yard coding school. This is a complete app built in 2 weeks.
-        The app uses a Rails backend and a frontend search filter was built with React.
-        This project pushed my limits for the two weeks, I learned about Device gem , facebook API and Refile Amazon S3.
-  		</article>
-  	</div>
-  </article>
-
-  <article class="row">
-  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 image">
-  	<%= image_tag 'spacebook.png', class:'img-responsive' %>
-  		<div class="overlay">
-  			<h4> <%= link_to 'GitHub', 'https://github.com/tiy-austin-ror/SpaceBook' %></h4>
-  		</div>
-  	</div>
-  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-  		<article class="project-article">
-        Spacebook app app where companies with multiple campuses can book rooms for events.
-        This project was a fullstack group project for the back ender class.
-        Division of work consisted of design, frontend using react and backend using rails.
-        I contributed in the design stage which consisted choosing the color, font and building mockups and styling of the pages.
-        This project was a great experience working with the team practicing Agil methedology.
-  		</article>
-  	</div>
-  </article>
-
-
-  <article class="row">
-  	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 image">
-  	<%= image_tag 'movie.png', class:'img-responsive' %>
-  		<div class="overlay">
-  		<h4> <%= link_to 'GitHub', 'https://github.com/Naghmehd/group_project_movie' %> </h4>
-  		</div>
-  	</div>
-  	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
-  		<article class="project-article">
-        Movie app was a group project where I was
-        the back end developer. My group consisted of two frontend javascript developers and a designer.
-        This showcases a complete rails API with all the necessary CRUD actions necessary for the project.
-        This project was a great experience working with a team full of different skillsets.
-      </article>
+  <div id="main2" class="row" "main2">
+    <header><h1 class="main1header">Projects</h1></header>
+      <div class="col-xs-12 col-sm-4 col-md-4" "image">
+        <div class="thumbnail">
+        <%= image_tag 'toyexchange.png', class:'img-responsive' %>
+        <div class="overlay">
+    		  <h4> <%= link_to 'GitHub', 'https://github.com/naghmehd/toyexchange' %> </h4>
+    			<%= link_to 'Live Site', 'http://toyexchange.herokuapp.com', class:'info' %>
+    	  </div>
+          <div class="caption">
+              <h4 class="text-center">ToyExchange</h4>
+              <p>
+                ToyExchange is an app for parents to exchange toys. This was
+                my final project at The Iron Yard coding school. This is a complete app built in 2 weeks.
+                The app uses a Rails backend and a frontend search filter was built with React.
+                This project pushed my limits for the two weeks, I learned about Device gem , facebook API and Refile Amazon S3.
+              </p>
+          </div>
+        </div>
+      </div>
+        <div class="col-xs-12 col-sm-4 col-md-4" "image">
+            <div class="thumbnail">
+                <%= image_tag 'spacebook.png', class:'img-responsive' %>
+                <div class="overlay">
+            			<h4> <%= link_to 'GitHub', 'https://github.com/tiy-austin-ror/SpaceBook' %></h4>
+            		</div>
+                <div class="caption">
+                    <h4 class="text-center">SpaceBook</h4>
+                    <p>
+                      Spacebook app app where companies with multiple campuses can book rooms for events.
+                      This project was a fullstack group project for the back ender class.
+                      Division of work consisted of design, frontend using react and backend using rails.
+                      I contributed in the design stage which consisted choosing the color, font and building mockups and styling of the pages.
+                      This project was a great experience working with the team practicing Agil methedology.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4" "image">
+            <div class="thumbnail">
+                <%= image_tag 'movie.png', class:'img-responsive' %>
+                <div class="overlay">
+            		<h4> <%= link_to 'GitHub', 'https://github.com/Naghmehd/group_project_movie' %> </h4>
+            		</div>
+                <div class="caption">
+                    <h4 class="text-center">movies</h4>
+                    <p>
+                      Movie app was a group project where I was
+                      the back end developer. My group consisted of two frontend javascript developers and a designer.
+                      This showcases a complete rails API with all the necessary CRUD actions necessary for the project.
+                      This project was a great experience working with a team full of different skillsets.
+                </div>
+            </div>
+        </div>
     </div>
 
-</main>
+    <div id="main3" class="main3">
+      <header><h1 class="main1header">Contact</h1></header>
+    	<ul class="row">
+        <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 image">
+          <i class="fa fa-3x fa-envelope" aria-hidden="true"></i>
+          <span class="contact-text"><%= mail_to 'naghmehd@gmail.com', 'naghmehd@gmail.com'%></span>
+        </li>
+
+      	<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 image">
+      		<i class="fa fa-3x fa-github" aria-hidden="true"></i>
+        		<% link_to 'https://github.com/naghmehd' do %>
+      		<span class="contact-text first">naghmehd</span>
+      		<% end %>
+      	</li>
+
+      	<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 image">
+      		<i class="fa fa-3x fa-twitter" aria-hidden="true"></i>
+        		<% link_to 'https://twitter.com/naghmehshirazi' do %>
+      		<span class="contact-text">naghmehshirazi</span>
+      		<% end %>
+      	</li>
+
+        <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 image">
+          <i class="fa fa-3x fa-cloud-download" aria-hidden="true"></i>
+          <span class="contact-text"><a href="/doc/NaghmehShirazi_Resume.pdf">RÉSUMÉ</a></span>
+        </li>
+      </ul>
+    </div>
+
+</div>
