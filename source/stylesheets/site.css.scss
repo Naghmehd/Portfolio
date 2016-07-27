@@ -3,13 +3,8 @@
 
 $orange: #DF761E;
 $lightorange: #ECC561;
-$floralwhite: #fdf9ef;
-$primary: #302D2E;
-$secondary: #F9C706;
-
 
 body {
-  background: $floralwhite;
   text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1em;
@@ -18,7 +13,7 @@ body {
 
 h1, h2, h3, h4, h5 , h6 {
 	font-family: 'Lato', sans-serif;
-  color: #302D2E;
+  color: #CCCCCC;
 }
 
 body {
@@ -30,15 +25,14 @@ body {
 }
 
 header {
-  width: 11.445em;
-  margin: 0 auto 0 10%;
-  padding-top: 0.1em;
 
 
   h1 {
     display: inline-block;
-    font-weight: lighter;
-    font-size: 2.5em;
+    font-weight: bold;
+    font-size: 2.75em;
+    color: $orange;
+    margin-top: 2.75em;
 
   }
 }
@@ -64,7 +58,7 @@ article {
     animation: fadeIn 4s;
     position: absolute;
     top: 2em;
-    center: 5.2em;
+    left: 45%;
     border-radius: 50%;
     height: 15em;
     width: 15em;
@@ -140,11 +134,11 @@ article {
   }
   a {
     text-decoration: none;
-      color: $primary;
+      color: #CCCCCC;
       display: inline-block;
 
     &:hover{
-      color: $secondary;
+      color: #EFEFEB;
       -webkit-transform: scale(1.1);
     }
 
