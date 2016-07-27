@@ -24,7 +24,17 @@
   </head>
 
   <body class="<%= page_classes %>">
-    
+    <nav class="navbar navbar-fixed-top navbar-default" role="navigation">
+      <div class="container-fluid">
+          <ul>
+            <li id="home" class="home"><%=link_to "Home", "#home"%></li>
+            <li id="projects" class="projects"><%=link_to "Projects", "#projects" %></li>
+            <li id="contact" class="contact"><%=link_to "Contact", "#contact" %></li>
+             <div id="underline" class="underline"></div>
+          </ul>
+      </div>
+    </nav>
+
     <%= yield %>
 
 
