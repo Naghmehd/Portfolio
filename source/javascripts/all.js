@@ -349,15 +349,15 @@ ready = function() {
 
 
 	$(window).scroll(function () {
-      var homehead = $('#homehead')
-      var projectshead = $('#projectshead')
-      var contacthead = $('#contacthead')
+      var main1head = $('#main1head')
+      var main2head = $('#main2head')
+      var main3head = $('#main3head')
 
-      if (isScrolledIntoView(homehead)){
+      if (isScrolledIntoView(main1head)){
         slideHome();
-      }else if (isScrolledIntoView(projectshead)){
+      }else if (isScrolledIntoView(main2head)){
         slideProj();
-      }else if (isScrolledIntoView(contacthead)){
+      }else if (isScrolledIntoView(main3head)){
         slideCont();
       }
 	});

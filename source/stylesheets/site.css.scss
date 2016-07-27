@@ -23,68 +23,10 @@ h1, h2, h3, h4, h5 , h6 {
 
 body {
   font-family: 'Lato', sans-serif;
+  background-color: #35485F;
 	p, article{
-		color: $primary;
+		color: white;
 	}
-}
-
-.logo {
-  position: relative;
-  color: #fff;
-  font-size: 1.5em;
-  top: 1em;
-}
-
-.navbar {
-    a {
-      text-decoration: none;
-      &:hover {
-        text-decoration: none;
-      }
-    }
-  background-color: $orange;
-  .underline {
-    animation: fadeIn 3s;
-    top: 0.8em;
-    height: 3px;
-    width: 3em;
-    background-color: #ECC561;
-    transition: all 0.15s ease-out;
-  }
-  ul {
-   display: inline-block;
-   position: relative;
-   top: 1em;
-
-   .home {
-     animation-duration: 1s;
-   }
-   .projects {
-     animation-duration: 0.5s;
-   }
-   .contact {
-     animation-duration: 0.2s;
-
-   }
-   li {
-     animation: slideIn;
-     display: inline-block;
-     margin: 0 0.9em;
-     a {
-       display: inline-block;
-
-       text-decoration: none;
-       font-family: 'Lato', sans-serif;
-       color: #fff;
-       font-size: 0.9em;
-       letter-spacing: 0.09em;
-       &:hover {
-         color: #ECC561;
-         -webkit-transform: scale(1.1);
-       }
-     }
-   }
- }
 }
 
 header {
@@ -114,18 +56,20 @@ article {
 }
 
 .project-article {
-  padding: 1em 0em;
+  padding: 2em;
 }
 
 .profile-pic {
   img {
+    animation: fadeIn 4s;
     position: absolute;
-    top: 8.8em;
-    right: 3.2em;
-    border-radius: 8%;
-    height: 4em;
-    width: 4em;
-    box-shadow: 0px 0px 3px 1px #777;
+    top: 2em;
+    center: 5.2em;
+    border-radius: 50%;
+    height: 15em;
+    width: 15em;
+    box-shadow: 0px 0px 3px 1px #fff;
+    transition: all 0.5s ease;
   }
 }
 
@@ -134,7 +78,7 @@ article {
     margin-left: 20px;
 }
 
-.project {
+.main2 {
 
   min-height: 85vh;
 
@@ -151,8 +95,6 @@ article {
     font-size: 2em;
     color: white;
     z-index: -1;
-
-
   }
   img {
     max-width: 330px;
@@ -165,7 +107,7 @@ article {
   article {
   padding-bottom: 2em;
   font-size: 0.95em;
-}
+  }
 }
 
 .img-responsive {
@@ -173,7 +115,7 @@ article {
     max-width: 85%;
 }
 
-.contact {
+.main3 {
   li {
     display: inline-block;
     position: relative;
@@ -182,7 +124,7 @@ article {
   }
 }
 
-.contact{
+.main3 {
   .row {
     margin: 0 auto;
     padding-left: 2em;
@@ -190,7 +132,6 @@ article {
       padding-bottom: 2em;
     }
   }
-
 
   .fa {
     color: $lightorange;
@@ -208,10 +149,10 @@ article {
     }
 
   }
-  .contact-text.first {
+  .main3-text.first {
     padding-left: 2em;
   }
-  .contact-text {
+  .main3-text {
     position: relative;
     padding-left: 1.5em;
     top: -1em;
