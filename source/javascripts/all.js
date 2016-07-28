@@ -1,5 +1,7 @@
 
 //= require jquerys
+//= require bootstrap-sprockets
+//= require script
 
 var sections = $('section')
  , nav = $('nav')
