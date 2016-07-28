@@ -109,6 +109,17 @@ header {
  }
 }
 
+nav.navbar.navbar-default {
+    border-bottom-color: $lightorange;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: $lightorange;
+  border-bottom: 1px solid transparent;
+  padding: 0; /*removing spacing*/
+  margin: 14px; /*add spacing*/
+}
+
 .thumbnail {
         position: relative;
         padding: 0px;
@@ -122,7 +133,6 @@ header {
 .thumbnail img {
        width: 100%;
    }
-
 
 .main3 {
 
