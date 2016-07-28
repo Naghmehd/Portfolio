@@ -27,7 +27,7 @@ var sections = $('section')
      , id = $el.attr('href');
 
    $('html, body').animate({
-     scrollTop: $(id).offset().top - nav_height
+     scrollTop: $el.offset().top - nav_height
    }, 500);
 
    return false;
