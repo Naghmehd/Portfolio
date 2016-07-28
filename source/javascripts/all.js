@@ -1,5 +1,5 @@
-//jquery viewport detector
 
+//= require jquerys
 
 var sections = $('section')
  , nav = $('nav')
