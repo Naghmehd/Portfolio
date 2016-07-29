@@ -322,10 +322,4 @@ $(document).ready(function() {
           $("li").removeClass("active");
           $(this).addClass("active");
         });
-
-// boxes = $(".projects");
-// maxHeight = Math.max.apply(Math, boxes.map(function () {
-//     return $(this).height()
-// }).get());
-// boxes.height(maxHeight);
 });
