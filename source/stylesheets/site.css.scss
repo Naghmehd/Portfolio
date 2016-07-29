@@ -102,21 +102,22 @@ header {
 // ----------------------Project section-----------------
 
 .thumbnail {
-        position: relative;
-        padding: 0px;
-        margin-bottom: 20px;
-    }
+  position: relative;
+  padding: 0px;
+  margin-bottom: 20px;
+  height: 62em;
+  }
 
 .thumbnail:hover {
-    background-color: $lightorange;
+  background-color: $lightorange;
 }
 
 .thumbnail img {
-       width: 100%;
-   }
-   
+  width: 100%;
+ }
+
 // ---------------------Contact section------------------
-.main3 {
+.row3 {
 
   li {
     display: inline-block;
