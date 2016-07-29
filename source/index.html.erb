@@ -77,27 +77,27 @@ title: Naghmeh Shirazi
     <header><h1>Contact</h1></header>
   	<ul class="row">
       <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 image">
-        <i class="fa fa-3x fa-envelope" aria-hidden="true"></i>
-        <span class="contact-text"><%= mail_to 'naghmehd@gmail.com', 'naghmehd@gmail.com'%></span>
+        <% link_to 'mailto:naghmehd@gmail.com' do %>
+          <i class="fa fa-3x fa-envelope" aria-hidden="true"></i>
+        <% end %>
       </li>
 
     	<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 image">
-    		<i class="fa fa-3x fa-github" aria-hidden="true"></i>
-      		<% link_to 'https://github.com/naghmehd' do %>
-    		<span class="contact-text first">naghmehd</span>
+    		<% link_to 'https://github.com/naghmehd' do %>
+  	     <i class="fa fa-3x fa-github" aria-hidden="true"></i>
     		<% end %>
     	</li>
 
     	<li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 image">
-    		<i class="fa fa-3x fa-twitter" aria-hidden="true"></i>
-      		<% link_to 'https://twitter.com/naghmehshirazi' do %>
-    		<span class="contact-text">naghmehshirazi</span>
+      	<% link_to 'https://twitter.com/naghmehshirazi' do %>
+    		  <i class="fa fa-3x fa-twitter" aria-hidden="true"></i>
     		<% end %>
     	</li>
 
       <li class="col-xs-3 col-sm-3 col-md-3 col-lg-3 image">
-        <i class="fa fa-3x fa-cloud-download" aria-hidden="true"></i>
-        <span class="contact-text"><a href="/doc/NaghmehShirazi_Resume.pdf">RÉSUMÉ</a></span>
+        <a href="/doc/NaghmehShirazi_Resume.pdf">
+          <i class="fa fa-3x fa-cloud-download" aria-hidden="true"></i>
+        </a>
       </li>
     </ul>
   </section>
