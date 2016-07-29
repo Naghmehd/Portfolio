@@ -9,7 +9,7 @@ $darkblue: #35485F;
 body {
   text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1em;
+  // font-size: 1em;
   margin-top: 11em;
   background-color: $darkblue;
   color: white;
@@ -17,12 +17,12 @@ body {
 
 h1, h2, h3, h4, h5 , h6 {
 	font-family: 'Lato', sans-serif;
-  color: #CCCCCC;
+  color: white;
 }
 
 p {
-  font-size: 1.5em;
-  line-height: 200%;
+  font-size: 1em;
+  line-height: 175%;
 }
 
 .container {
@@ -32,8 +32,7 @@ p {
 header {
   h1 {
     display: inline-block;
-    font-weight: bold;
-    font-size: 2.75em;
+    font-weight: normal;
     color: $lightorange;
     margin-top: 2.75em;
 
@@ -43,8 +42,8 @@ header {
 .profile-pic {
   img {
     position: absolute;
-    top: 7em;
-    left: 45%;
+    top: -10em;
+    left: 39%;
     border-radius: 50%;
     height: 15em;
     width: 15em;
@@ -55,6 +54,7 @@ header {
 .row {
     margin-right: 0px;
     margin-left: 20px;
+    margin-bottom: 7em;
 }
 
 // ----------------------------Navigation------------------
@@ -105,7 +105,7 @@ header {
   position: relative;
   padding: 0px;
   margin-bottom: 20px;
-  height: 62em;
+  height: 35em;
   }
 
 .thumbnail:hover {
@@ -124,34 +124,42 @@ header {
     position: relative;
     text-decoration: none;
     font-family: 'Lato', sans-serif;
+
   }
 
-  .row {
-    padding-bottom: 4em;
-  }
 
-  .fa {
-    color: $lightorange;
-    &:hover {
-    }
-  }
-  a {
-    text-decoration: none;
-      color: #CCCCCC;
-      display: inline-block;
-
-    &:hover{
-      color: #EFEFEB;
-      -webkit-transform: scale(1.1);
-    }
+.social:hover {
+   -webkit-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   -o-transform: scale(1.1);
 }
+.social {
+   -webkit-transform: scale(0.8);
+   /* Browser Variations: */
 
-  .main3-text.first {
-    padding-left: 2em;
+   -moz-transform: scale(0.8);
+   -o-transform: scale(0.8);
+   -webkit-transition-duration: 0.5s;
+   -moz-transition-duration: 0.5s;
+   -o-transition-duration: 0.5s;
+   color: $lightorange
   }
-  .main3-text {
-    position: relative;
-    padding-left: 1.5em;
-    top: -1em;
+
+/*
+    Multicoloured Hover Variations
+*/
+
+ #social-em:hover {
+     color: #f39c12;
   }
+ #social-tw:hover {
+     color: #4099FF;
+  }
+ #social-gt:hover {
+     color: #f3f3f3;
+  }
+ #social-re:hover {
+     color: $orange;
+  }
+
 }
