@@ -23,6 +23,7 @@ h1, h2, h3, h4, h5 , h6 {
 p {
   font-size: 1em;
   line-height: 175%;
+  color: white;
 }
 
 .container {
@@ -106,6 +107,9 @@ header {
   padding: 0px;
   margin-bottom: 20px;
   height: auto;
+  background-color: $darkblue;
+  border: none;
+  text-align: left;
   }
 
 .thumbnail:hover {
@@ -115,6 +119,10 @@ header {
 .thumbnail img {
   width: 100%;
  }
+
+.overlay h5 {
+  text-align: center;
+}
 
 // ---------------------Contact section------------------
 .row3 {
