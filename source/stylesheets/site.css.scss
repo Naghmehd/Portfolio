@@ -33,9 +33,9 @@ p {
 header {
   h1 {
     display: inline-block;
-    font-weight: normal;
+    font-weight: bold;
     color: $lightorange;
-    margin-top: 2.75em;
+    margin-top: 3.75em;
 
   }
 }
@@ -44,7 +44,7 @@ header {
   img {
     position: absolute;
     top: -10em;
-    left: 39%;
+    left: 41%;
     border-radius: 50%;
     height: 15em;
     width: 15em;
