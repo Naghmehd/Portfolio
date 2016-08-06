@@ -14,4 +14,4 @@ gem 'middleman-livereload'
 gem 'middleman-compass', '>= 4.0.0'
 gem 'middleman-jquery', '~> 2.1', '>= 2.1.1'
 gem 'middleman-sprockets', '~> 4.0.x'
-gem "middleman-deploy"
+gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy', branch: 'master'
