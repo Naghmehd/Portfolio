@@ -35,9 +35,16 @@ end
 
 # Build-specific configuration
 configure :build do
+  activate :relative_assets
   # Minify CSS on build
   # activate :minify_css
 
   # Minify Javascript on build
   # activate :minify_javascript
+end
+
+activate :deploy do |deploy|
+  deploy.method = :git
+  deploy.branch = 'gh-pages'
+  deploy.build_before = true
 end
