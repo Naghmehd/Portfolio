@@ -27,7 +27,7 @@ p {
 }
 
 .container {
-  margin-top: 19em;
+  // margin-top: 19em;
 }
 
 header {
@@ -42,9 +42,7 @@ header {
 
 .profile-pic {
   img {
-    position: absolute;
-    top: -10em;
-    left: 41%;
+    display: inline-block;
     border-radius: 50%;
     height: 15em;
     width: 15em;
