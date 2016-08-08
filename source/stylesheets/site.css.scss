@@ -10,7 +10,6 @@ body {
   text-align: center;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   // font-size: 1em;
-  margin-top: 11em;
   background-color: $darkblue;
   color: white;
 }
@@ -94,6 +93,11 @@ header {
    border-bottom: 2px solid $lightorange;
  }
 }
+// -----------------About me -----------------
+
+#home {
+  padding-top: 8em;
+}
 
 
 
@@ -119,6 +123,10 @@ header {
 
 .overlay h5 {
   text-align: center;
+}
+
+ul.row {
+  padding-left: 0;
 }
 
 // ---------------------Contact section------------------
